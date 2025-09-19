@@ -1,7 +1,7 @@
 #I'm not exactly sure which one I was supposed to do, here's both
 
-def f():
+def task_1_return():
     return("Hello world!")
 
-def g():
+def task_1_print():
     print("Hello world!")
