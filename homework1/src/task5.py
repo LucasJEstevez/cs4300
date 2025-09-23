@@ -12,8 +12,8 @@ studentDB={
     'Daniel Barbotko':69
 }
 
-#def task5_books():
-#    return(books[0:3])
+def task5_books():
+    return(books[0:3])
 
 def task5_getID(student):
     return(studentDB[student])
