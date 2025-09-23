@@ -24,3 +24,8 @@ def test_task1_mod():
     assert task2_mod(5,2)==1
     assert task2_mod(6,9) == 6
     assert task2_mod(2,.3) == .2
+
+    #Checks if division by 0 raises error
+    with pytest.raises(ZeroDivisionError):
+        task2_mod(4,0)
+        task2_mod(6,0)
