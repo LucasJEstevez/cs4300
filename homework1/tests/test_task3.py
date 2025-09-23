@@ -1,6 +1,6 @@
 import pytest
 import math
-from src.task3 import task3_check_sign,task3_ten_primes,task3_sum_classic,task3_sum_magic
+from src.task3 import task3_check_sign,is_prime,task3_ten_primes,task3_sum_classic,task3_sum_magic
 
 #Testing with regular and very small numbers
 def test_task3_check_sign():
@@ -26,3 +26,10 @@ def test_task3_sum():
     assert task3_sum_magic(1) == 1
     assert task3_sum_classic(0) == 0
     assert task3_sum_classic(0) == 0
+
+#Tests is_prime function (will convert to integer)
+def test_task3_is_prime():
+    assert is_prime(1)==False
+    assert is_prime(2)==True
+    assert is_prime(13159)==True
+    assert is_prime(50.1)==False

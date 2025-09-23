@@ -7,3 +7,5 @@ def test_task5_books():
 def test_task5_getID():
     assert task5_getID('Lucas Estevez') == 42
     assert task5_getID('Daniel Barbotko') == 69
+    with pytest.raises(KeyError):
+        task5_getID('Mason Sowanick')==30
