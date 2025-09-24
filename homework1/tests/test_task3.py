@@ -10,6 +10,13 @@ def test_task3_check_sign():
     assert task3_check_sign(-10) == 'negative'
     assert task3_check_sign(-.001) == 'negative'
 
+#Tests is_prime function (will convert to integer)
+def test_task3_is_prime():
+    assert is_prime(1)==False
+    assert is_prime(2)==True
+    assert is_prime(13159)==True
+    assert is_prime(50.1)==False
+
 #Checking output, not much to check as funciton takes no inputs
 def test_task3_primes(capfd):
     task3_ten_primes()
@@ -26,10 +33,3 @@ def test_task3_sum():
     assert task3_sum_magic(1) == 1
     assert task3_sum_classic(0) == 0
     assert task3_sum_classic(0) == 0
-
-#Tests is_prime function (will convert to integer)
-def test_task3_is_prime():
-    assert is_prime(1)==False
-    assert is_prime(2)==True
-    assert is_prime(13159)==True
-    assert is_prime(50.1)==False
