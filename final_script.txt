@@ -1,0 +1,19 @@
+Welcome to RecReo, the go-to place for all your recreational needs and information.
+
+In order to see activities, you have a few options. One is to share your location with the program, like so.
+
+You'll then be redirected to a list of activities nearby...
+
+You will see a list of locations, each with their name, types of activities, address, and distance from you.
+
+Along with a short forecast...
+and a map of the activities.
+
+You can also filter your activities to narrow your search.
+
+Once you select a page, you can see a more detailed description including distance, address, status, and an ai generated description.
+
+You can also input a location of your choosing and see events and activities elsewhere, like so.
+
+Here is another example of using our filters to find an activity or location that sounds fun for you, and the corresponding page with more detail.
+

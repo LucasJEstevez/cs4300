@@ -1,0 +1,60 @@
+Pillar 1: Reliability
+
+CI/CD Pipelines
+Building systems that work as expected
+Automated testing culture
+
+Why good code fails
+Symptom 1: tests fail depending on run order
+Root Cause: Tests rely on shared state that isn't properly reset between runs
+
+Symptom 2: Tests fail in CI but pass locally
+Root Cause: Mismatch between CI env and local env (involves permissions, dependencies, and service configs)
+
+Symptom 3: CI pipeline is slow and delayed due to flaky integration tests
+First step: Review and stabilize shared state and environments before considering removing tests
+
+Pillar 2: Clarity
+
+Writing code that endures
+The best code is clear, simple, and easy for others to change. This focuses on writing maintainable code by quantifying complexity and mastering the art of refactoring.
+
+Complex code directly correlates with more bugs
+
+Refactoring:
+Improving Boundaries (reduce unnecessary data passing)
+Injecting Dependencies (passing in dependencies instead of creating them)
+Integrating frequently (integrating small refactoring changes frequently to avoid merge conflicts)
+
+Semantic Versioning:	x.x.x   major.minor.patch
+
+Strong API Contracts:
+Prime Directive: Maintainable internal API keeps data formats consistent
+Design Pattern: Pagination	Pagination is to improve performance and reduce payload size
+Anti-Pattern: Excessive Parameters	API endpoint that accepts too many parameters is a red flag (harder to validate/maintain/document)
+Scaling Pattern: API Gateways	API Gateways are used to centralize cross-cutting concerns like routing, auth, and rate-limiting. Allows backend services to focus purely on their core business logic.
+
+
+****LOL I LEFT CLASS****
+
+
+
+Building a cluture of accountability and growth
+Accountability: When teams miss goals due to unclear roles, the solution is a shared accountability agreement and a visible task board. For shared resources like CI build, best practice is to rotate responsibility
+Communication: When a teammate is struggling or not contributing, the first step is to reach out privately to offer help. When stakeholders misunderstand user stories, supplement them with visual aids or walkthroughs during planning.
+Mentorship: The role of a senior engineer is not to rewrite junior-written code. The best response is to encourage mentorship by reviewing and improving tests together, fostering a culture of growth.
+
+Modern Teammate: Collaborating with AI
+For generated tests: Never accept all generated tests blindly. You must review each test for correctness, meaningful assertions, and edge cases.
+For generated code: A safe approach for any AI-generated code is to treat it like any other code: review it, test it, and validate it before integration
+For generated data: AI-generated API responses must be validated before use. Unvalidated responses may be inaccurate, insecure, or contain hallucinations.
+
+The blueprint is a system:
+These four pillars are not a checklist; they are an interconnected system for building excellent software.
+
+Reliability builds trust
+Clarity ensures longevity
+Contracts enable scale
+Collaboration makes it all possible
+
+
