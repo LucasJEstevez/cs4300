@@ -3,7 +3,10 @@ https://github.com/JPotter-CS/UCCS-CS4300-fall2025-Team-5
 www.recreo.world
 
 Our major change to the codebase was adding AI-Generated descriptions for the activities to give users an idea of what they could do without being required to visit an external yelp link.
-We fixed our pylint problems from beforehand, the code now looks presentable and clean.
+We fixed our pylint problems from beforehand, initially when integrating pylint it had discovered a lot of needed fixes we had to implement but did not have the time in the previous sprint, the code now looks presentable and clean as a result of this final sprint.
 
+We also recorded and voiced-over our marketing video
 Recorded edited and voiced-over marketing video
+
+
 
